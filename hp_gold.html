@@ -1,0 +1,295 @@
+{{BU17_template_global}}
+{{BU17_template_menubar}}
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,900" rel="stylesheet"> 
+<style>
+#top_menu_inside ul li > a { /* RECOLORS IGEM MENU */
+	color: #a9a9a9 !important;
+}
+.menu-type {
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 5 pt !important;
+	font-size: 14pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.wide-heading-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24pt !important;
+	letter-spacing: 5pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+        font-color: white;
+}
+.body-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt !important;
+	text-decoration: none !important;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.caption-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18pt !important;
+	text-decoration: none !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.inline-heading-type {
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 20pt !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	line-height: 2 pt !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.float-left {
+	float: left !important;	
+}
+.float-right {
+	float: right !important;	
+}
+.align-right {
+	text-align: right !important;	
+}
+.align-center {
+	text-align: center !important;	
+}
+.indented {
+	text-indent: 80px;
+}
+.mainwrap {
+	width: 90%;
+	max-width: 960px;
+	min-width: 360px;
+	margin: 0 auto;
+	top:0;
+	display: none;
+}
+body {
+	background-image: url("http://2017.igem.org/wiki/images/f/ff/T--BostonU--CircadiaSynthetica.png");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+}
+#backgroundimage1 {
+	margin-top: -85px;
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	align-content:center;
+	text-align:center
+	vertical-align:middle;
+}
+#backgroundimage1 p {
+	top: 40%;
+	color: #FEFEFE;
+	position: relative;
+}
+.background-gradient-down {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,0) 0%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-up {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&1+0,0+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#00efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-both {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+50,efefee+100&1+0,0+50,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 50%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+#panel1 {
+	background: #EFEFEE;
+	width: 100%;
+	color: #1d1d1d;
+	z-index: 1;
+}
+#backgroundimage2 {
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	position: relative;
+}
+#backgroundimage2 p {
+	top: 40%;
+	color: #8C181B;
+}
+#protocol-accordion .ui-accordion-content  {
+	background: #FFFFFF;
+	color: #A9A9A9;
+	border-radius: 20px;
+}
+#protocol-accordion .ui-accordion-content > * {
+  margin: 0;
+  padding: 40px;
+}
+.link-slideup {
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #D45B5C;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.link-slideup a::before, .link-slideup a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	overflow: hidden;
+	font-weight: 500;
+}
+.link-slideup a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #A9A9A9;
+	opacity: 1;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: translateY(95%);
+	transform: translateY(95%);
+	opacity: 0.3;
+}
+.link-slideup a:hover::before, .link-slideup a:focus::before {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.figwrap {
+	background: #FFFFFF;
+	width: 80%;
+	border-radius: 5pt;
+	align-content:center;
+}
+.figwrap img {
+	heigth: 500 px;
+	padding: 0 5%;
+}
+.figwrap p {
+	padding: 0 5%;
+}
+</style>
+</head>
+<body>
+<div id="backgroundimage1"><div class="background-gradient-down">
+  <p class="wide-heading-type mainwrap align-center">INTEGRATED HUMAN PRACTICES</p>
+</div></div>
+<div id="panel1" class="link-slideup">
+  <p class="inline-heading-type mainwrap">IHP: Discovering and promoting foundational advances in synthetic biology</p>
+  <p class="body-type mainwrap indented">&nbsp;</p> 
+ <p class="inline-heading-type mainwrap">Part I: Pivoting our project through conversations with academic and industry leaders </p>
+  <p class="body-type mainwrap">Dr. Muhammad Zaman is a professor at Boston University who focuses on cancer diagnostics and global health research. He also serves as the advisor for Boston University’s chapter of Engineers without Borders, and has led a variety of projects centered on the development of diagnostic tools for high-need communities. During the early stages of our project, we aimed to develop a microfluidic device based on toehold switches as a tool to detect cancer mRNAs and function as a point-of-care diagnostic. We decided to reach out to Dr. Zaman because his research expertise would provide valuable insight on the feasibility of our intended future applications of the project, as we had no experience in developing point-of-care diagnostics for low-income populations. Dr. Zaman shared with us his opinions on our project and its potential contribution to human health development.</p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">Dr. Zaman covered two major topics in our discussion with him: accessibility and robustness. When addressing accessibility, he indicated that our device should be able to be used successfully by local health personnel. When designing new technologies, it is important that they fit easily into existing healthcare structure so that they can be adapted with ease. With regards to robustness, Dr. Zaman brought up a number of technical difficulties our technology might encounter if utilized outside of the lab. One issue when attempting to detect RNAs is that RNase enzymes, which are ubiquitous in the environment [1], are highly likely to contaminate RNA samples when not used in a sterile area. Due to the scarcity of sterile facilities needed to mitigate this issue in low-resource areas, RNAse contamination would be highly likely and thus render our device unusable. Dr. Zaman was unconvinced that our project, in its proposed form, would see success when used in the contexts that we were considering.</p>
+ <p class="body-type mainwrap">&nbsp;</p>
+<center>
+<img src="http://2017.igem.org/wiki/images/f/f6/T--BostonU--DRZAMAN.jpg" height = "600" width="430"></img>
+</center>
+<div class="figwrap mainwrap body-type">
+</div>
+<p class="body-type mainwrap">&nbsp;</p>
+<p class="body-type mainwrap">We then visited the Fraunhofer Center for Manufacturing Innovation’s Boston facility to discuss microfluidic systems and their applications. We learned that microfluidics can significantly increase efficiency of synthetic biologists’ work, since they can enable experiments to run semi-autonomously once all reagents are added. This automation allows scientists to take the time to work on other aspects of their projects such as data analysis and experimental design. Microfluidic chips are also portable and easy to use, which make them more accessible for point-of-care applications. These characteristics of microfluidics aligned with our initial intention of developing user-friendly diagnostic devices. However, through further conversations with Fraunhofer and our collaboration experience with <a href="http://2017.igem.org/Team:BostonU/Collaborations">BostonU Hardware,</a> we realized that with our resources and protocol, encapsulating our system in a microfluidic device would not be possible given the current state of our toehold technology. </p>
+<p class="body-type mainwrap">&nbsp;</p>
+<center>
+ <img src="http://2017.igem.org/wiki/images/c/cb/T--BostonU--Fraunhofer.png" height = "150" width = "800"></img>
+</center>
+<div class="figwrap mainwrap body-type">
+</div>
+ <p class="body-type mainwrap">&nbsp;</p>
+ <p class="body-type mainwrap">Our conversations with Dr. Zaman and with the Fraunhofer team thus steered our primary focus toward making our project a foundational advance of the toehold technology in our own cell-free system. Future conversations within our team led to the incorporation of recombinases and the shift to a molecular computation focus for our project. We still see potential applications in microfluidic devices, but within the scope of our project we instead wanted to focus on developing this new molecular computational technology in a standalone system.</p>
+ <p class="body-type mainwrap">&nbsp;</p>
+
+ <p class="inline-heading-type mainwrap">Part II: Sharing the impact of foundational advances with the community</p>
+
+ <p class="body-type mainwrap">Despite our productive conversations with industrial and academic leaders, we struggled with portraying the importance of foundational advances when describing our project to non-scientific audiences. We found ourselves leaning heavily on justifying our project using potential future applications as opposed to the core technology itself, which sent a confusing message to people with whom we interacted.</p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">For example, we presented our work at the STEM Pathways Dinner and Dialogue, in which a variety of academic and industry speakers showcased new technologies in synthetic biology. In this setting, we were able to witness large-scale conversations about synthetic biology in action, all in the presence of scientists, graduate and undergraduate students, high school teachers, and other members from our Boston community. Presentations focused on new synthetic biology technologies and applications, such as shoes made of silk engineered to be stronger than traditional silk from silkworms. In this instance, the new product is interesting, but what we find even more important is the foundational technology that allows for the product, what has an extensive application space. Some attendees started to voice concerns and frustrations after these presentations, with an overall sentiment that the power of synthetic biology was being leveraged for making shoes and not for more pressing applications like curing diseases. In this conversation, we saw a reflection of the difficulties we faced in promoting the importance of foundational advances in research. We want to emphasize that foundational advances are the cornerstone of life-changing innovations in synthetic biology.</p>
+ <p class="body-type mainwrap">&nbsp;</p>
+<center>
+<img src="http://2017.igem.org/wiki/images/2/2a/T--BostonU--DinnerandDialogue1.png" height = "600" width="750"></img>
+</center>
+<div class="figwrap mainwrap body-type">
+</div>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">We express this idea in our art piece entitled <a href="http://2017.igem.org/Team:BostonU/HP/Silver">“Circadia Synthetica.”</a> Our art installation explores three levels of synthetic biology applications by imagining a time in which it is necessary for humans to live on Mars. How can we harness synthetic biology to enable human survival on another planet? The painting is a triptych with three interlocking panels: One half of each panel shows naturally existing circadian rhythms in bacteria and humans, as well as a synthetically modified flower that changes color based on the time of day.  The other half of each panel shows how bacteria, plants, or humans could be synthetically modified using the synthetic circadian system from the plants on Earth. Through this project, we hope to generate thought and conversations from viewers about how basic, foundational research, such as the engineering of a molecular clock, are necessary for solving much larger problems in the future.</p>
+ <p class="body-type mainwrap">&nbsp;</p>
+<center>
+  <img src="http://2017.igem.org/wiki/images/f/ff/T--BostonU--CircadiaSynthetica.png" height = "600" weight = "800"></img>
+</center>
+  <p class="body-type mainwrap">&nbsp;</p>
+<div class="figwrap mainwrap body-type">
+</div>
+  <p class="body-type mainwrap">We have posted our artwork on our various social media accounts, which have generated lively discussions among our social circles, both within Boston and beyond. We wanted to understand how audiences respond to the different levels of modification, as well as if and how their understanding of the importance of foundational advances changes after engaging with the art. Comments indicated surprise at potential applications in space, and apprehension at synthetically modifying humans. When responding to comments, we found it useful to emphasize the basic principles behind the applications presented in the project. We also reflected on the ethical implications that potential applications of synthetic biology present, such as where do we draw the line with human modification. If you are interested in engaging in similar conversations, the art project will also be presented in the Exhibition Space at the Jamboree. We encourage everyone to stop by, see it in person, and provide us with their thoughts and feedback.</p>
+<p class="body-type mainwrap">&nbsp;</p>
+<center>
+<img src="http://2017.igem.org/wiki/images/5/5c/T--BostonU--TwitterFeedback.png" height = "650" width="800"></img>
+</center>
+<div class="figwrap mainwrap body-type">
+</div>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">We recognize the necessity of, and challenges with, actively promoting foundational research. Our goal in our interactions with the community, including our wiki and presentation at iGEM, is to frame our project in terms of how our foundational advance can define tools that in the future could be used to accomplish groundbreaking innovations. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">1: “The Basics: RNase Control.” Thermo Fisher Scientific Inc. (2015) Retrieved from: http://www.thermofisher.com/in/en/home/references/ambion-tech-support/nuclease-enzymes/general-articles/the-basics-rnase-control.html  </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+</div>
+<div id="backgroundimage2"><div class="background-gradient-up">
+</div></div>
+<script> /* THIS MAKES ANY WRAPPED ELEMENT ON THE PAGE FADE IN */
+$(document).ready(function () {
+    $('.mainwrap').fadeIn(1000);
+});
+</script>
+</body>
+</html>

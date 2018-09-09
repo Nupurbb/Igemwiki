@@ -78,7 +78,7 @@
 	display: none;
 }
 body {
-	background-image: url("http://2017.igem.org/wiki/images/c/c7/T--BostonU--SaiPipetting2.jpg");
+	background-image: url("http://2017.igem.org/wiki/images/f/ff/T--BostonU--CircadiaSynthetica.png");
 	background-repeat: no-repeat;
     background-attachment: fixed;
 	-webkit-background-size: cover;
@@ -98,7 +98,7 @@ body {
 	height: 360px;
 	width: 100%;
 	align-content:center;
-	text-align:center;
+	text-align:center
 	vertical-align:middle;
 }
 #backgroundimage1 p {
@@ -150,7 +150,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', end
 }
 #backgroundimage2 p {
 	top: 40%;
-	color: #8C181B;
+	color: #FEFEFE;
 }
 #protocol-accordion .ui-accordion-content  {
 	background: #FFFFFF;
@@ -205,19 +205,64 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', end
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
-#overview_description {
-	width: 720px;
+.figwrap {
+	background: #FFFFFF;
+	width: 80%;
+	border-radius: 5pt;
+	align-content:center;
+}
+.figwrap img {
+	height: 500px;
+	padding: 0 5%;
+}
+.figwrap p {
+	padding: 0 5%;
 }
 </style>
 </head>
 <body>
 <div id="backgroundimage1"><div class="background-gradient-down">
-  <p class="wide-heading-type mainwrap align-center">PROJECT OVERVIEW</p>
+  <p class="wide-heading-type mainwrap align-center">CONTRIBUTION TO THE INTERLAB STUDY</p>
 </div></div>
 <div id="panel1" class="link-slideup">
-<div id="overview_description"class="mainwrap">
-<img class=""src="http://2017.igem.org/wiki/images/a/af/T--BostonU--overview_description.svg"></img>
-</div>
+  <p class="body-type mainwrap">Fluorescence measurements are difficult to standardize across labs because different methods and units are used to measure fluorescence. In an effort to standardize fluorescence measurements from Green Fluorescent Protein (GFP), one of the most commonly used marker proteins, iGEM has implemented the InterLab Study in order to provide protocols for users to generate absolute units for measuring GFP. This is the fourth year iGEM has done the <a href="http://2017.igem.org/Competition/InterLab_Study">InterLab Study.</a></p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">This year, iGEM is addressing this question: How close can the numbers be when fluorescence is measured all around the world? Parts from the iGEM InterLab Kit were transformed into competent E. coli DH5-alpha cells. Eight plasmids in total were transformed, including a Negative Control, a Positive Control, and six test devices.Their iGEM IDs are listed below. All measurements were made in a SpectraMax plate reader from a CoStar black clear bottom 96-well plate. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <section class="body-type mainwrap link-slideup">
+  <p class="body-type mainwrap">&#9642;    Positive Control (<a href="http://parts.igem.org/Part:BBa_I20270">BBa_I20270</a>)</p>
+  <p class="body-type mainwrap">&#9642;    Negative Control (<a href="http://parts.igem.org/Part:BBa_R0040">BBa_R0040</a>)</p>
+  <p class="body-type mainwrap">&#9642;    Test Device 1 (<a href="http://parts.igem.org/Part:BBa_J364000">BBa_J364000</a>)</p>
+  <p class="body-type mainwrap">&#9642;    Test Device 2 (<a href="http://parts.igem.org/Part:BBa_J364001">BBa_J364001</a>)</p>
+  <p class="body-type mainwrap">&#9642;    Test Device 3 (<a href="http://parts.igem.org/Part:BBa_J364002">BBa_J364002</a>)</p>
+  <p class="body-type mainwrap">&#9642;    Test Device 4 (<a href="http://parts.igem.org/Part:BBa_J364003">BBa_J364003</a>)</p>
+  <p class="body-type mainwrap">&#9642;    Test Device 5 (<a href="http://parts.igem.org/Part:BBa_J364004">BBa_J364004</a>)</p>
+  <p class="body-type mainwrap">&#9642;    Test Device 6 (<a href="http://parts.igem.org/Part:BBa_J364005">BBa_J364005</a>) </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  </section>
+  <p class="body-type mainwrap">Baseline OD measurements were made using LUDOX-S40. These measurements allow for conversion from absorbance at 600 nm to OD. Our conversion factor was determined to be 0.01275.</p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">A standard fluorescence curve was generated using serial dilutions of fluorescein. This allowed for correction of the measured fluorescence against standard fluorescein measurements. We ran into issues with generating the standard curve because even after adjusting the settings, the fluorescence from the two highest fluorescein concentrations saturated our plate reader. The following are the graphs generated based on the data we were able to collect. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/7/7d/T--BostonU--InterLabSC.png"></img>
+  <p class="body-type"><strong>Figure 1.</strong> This figure shows the standard curve generated from our fluoroscein measurements during the InterLab Study. </p>
+  </div>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/e/ed/T--BostonU--InterLabSClog.png"></img>
+  <p class="body-type"><strong>Figure 2.</strong> This figure shows the same standard curve as Figure 1 except graphed with a logarithmic scale. </p>
+  </div>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">Finally, we were able to measure the fluorescence from the InterLab parts. The eight parts were rehydrated from Plate 6 from the Distribution Kit. They were transformed according to the provided protocols into DH5-alpha cells and plated on LB+chloramphenicol plates. Two colonies were picked from each plate and liquid cultured for 16 hours. The next day, the cultures were diluted to an absorbance at 600nm of approximately 0.02. 500 &mu;l from each culture were taken at 0, 2, 4, and 6 hours after dilution. The fluorescence and absorbance at 600nm were measured from these samples via the plate reader. The following graph shows time series for the corrected fluorescence from each curve, with colony 1 shown as solid lines and colony 2 shown as dashed lines. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/8/8d/T--BostonU--InterLabPlot1Best.png"></img>
+  <p class="body-type"><strong>Figure 2.</strong> Caption for figure. This figure shows a time course for the average fluorescence from each colony at each time point. Two colonies, labelled C1 and C2 in the legend, were measured for each device. </p>
+  </div>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">&nbsp;</p>
 </div>
 <div id="backgroundimage2"><div class="background-gradient-up">
 </div></div>

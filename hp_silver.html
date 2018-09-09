@@ -1,0 +1,392 @@
+{{BU17_template_global}}
+{{BU17_template_menubar}}
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,900" rel="stylesheet">
+<style>
+#top_menu_inside ul li > a { /* RECOLORS IGEM MENU */
+	color: #a9a9a9 !important;
+}
+.menu-type {
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 5 pt !important;
+	font-size: 14pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.wide-heading-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24pt !important;
+	letter-spacing: 5pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.body-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt !important;
+	text-decoration: none !important;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.caption-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18pt !important;
+	text-decoration: none !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.inline-heading-type {
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 20pt !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	line-height: 2 pt !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.float-left {
+	float: left !important;
+}
+.float-right {
+	float: right !important;
+}
+.align-right {
+	text-align: right !important;
+}
+.align-center {
+	text-align: center !important;
+}
+.indented {
+	text-indent: 80px;
+}
+.mainwrap {
+	width: 90%;
+	max-width: 960px;
+	min-width: 360px;
+	margin: 0 auto;
+	top: 0;
+	display: none;
+}
+body {
+	background-image: url("http://2017.igem.org/wiki/images/f/ff/T--BostonU--CircadiaSynthetica.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+}
+#backgroundimage1 {
+	margin-top: -85px;
+	background-image: url("#");
+	background-repeat: no-repeat;
+	background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	align-content: center;
+ text-align:center vertical-align:middle;
+}
+#backgroundimage1 p {
+	top: 40%;
+	color: #FEFEFE;
+	position: relative;
+}
+.background-gradient-down {
+	height: 360px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&0+0,1+100 */
+	background: -moz-linear-gradient(top, rgba(239,239,238,0) 0%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(239,239,238,0) 0%, rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(239,239,238,0) 0%, rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00efefee', endColorstr='#efefee', GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-up {
+	height: 360px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&1+0,0+100 */
+	background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#00efefee', GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-both {
+	height: 360px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+50,efefee+100&1+0,0+50,1+100 */
+	background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 50%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 50%, rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 50%, rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#efefee', GradientType=0 ); /* IE6-9 */
+}
+#panel1 {
+	background: #EFEFEE;
+	width: 100%;
+	color: #1d1d1d;
+	z-index: 1;
+}
+#backgroundimage2 {
+	background-image: url("#");
+	background-repeat: no-repeat;
+	background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	position: relative;
+}
+#backgroundimage2 p {
+	top: 40%;
+	color: #8C181B;
+}
+#protocol-accordion .ui-accordion-content {
+	background: #FFFFFF;
+	color: #A9A9A9;
+	border-radius: 20px;
+}
+#protocol-accordion .ui-accordion-content > * {
+	margin: 0;
+	padding: 40px;
+}
+/* --- Link slideup --- */
+.link-slideup {
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #D45B5C;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.link-slideup a::before, .link-slideup a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	overflow: hidden;
+	font-weight: 500;
+}
+.link-slideup a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #A9A9A9;
+	opacity: 1;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: translateY(95%);
+	transform: translateY(95%);
+	opacity: 0.3;
+}
+.link-slideup a:hover::before, .link-slideup a:focus::before {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+/* --- END of link slideup --- */
+/* --- Carousel --- */
+.carousel {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: black;
+}
+.carousel:hover .slide:after, .carousel:hover .counter, .carousel:hover .slide:before {
+	opacity: 1;
+}
+.slide {
+	float: right;
+	position: absolute;
+	z-index: 1;
+	width: 600px;
+	height: 400px;
+	background-color: #eee;
+	text-align: center;
+	transition: opacity 0.4s;
+	opacity: 1;
+}
+.slide img {
+	width: 600px;	
+}
+.slide:before {
+	content: attr(annot);
+	display: block;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	color: rgba(255,255,255,0.9);
+	font-size: 14px;
+	font-weight: 300;
+	z-index: 12;
+	opacity: 0;
+	transition: opacity 0.3s;
+	text-shadow: 0 0 1px #000;
+}
+.slide:after {
+	content: attr(slide);
+	display: block;
+	position: absolute;
+	bottom: 0;
+	transition: opacity 0.3s;
+	width: 100%;
+	height: 80px;
+	opacity: 0;
+	background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
+	text-align: left;
+	text-indent: 549px;
+	line-height: 101px;
+	font-size: 13px;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0 0 1px #000;
+}
+.counter {
+	position: absolute;
+	bottom: 20px;
+	right: 1px;
+	height: 20px;
+	width: 60px;
+	z-index: 2;
+	text-align: center;
+	color: #fff;
+	line-height: 21px;
+	font-size: 13px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.faux-ui-facia {
+	top: 0;
+	right: 0;
+	float: right;
+	position: absolute;
+	margin-top: 0;
+	z-index: 9;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+.faux-ui-facia:checked {
+	z-index: 8;
+}
+.faux-ui-facia:checked + .slide {
+	opacity: 0;
+}
+.faux-ui-facia:checked:nth-child(1):checked {
+	z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked {
+	float: left;
+	z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked + .slide {
+	opacity: 1;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+	float: left;
+	z-index: 8;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+	opacity: 0;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+	z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+	opacity: 1;
+}
+/* --- END of Carousel --- */
+</style>
+</head>
+<body>
+<div id="backgroundimage1">
+  <div class="background-gradient-down">
+    <p class="wide-heading-type mainwrap align-center">HUMAN PRACTICES</p>
+  </div>
+</div>
+<div id="panel1" class="link-slideup">
+  <p class="inline-heading-type mainwrap">Art Project: <em>Circadia Synthetica</em></p>
+  <p class="body-type mainwrap indented">This painted triptych is an exploration of circadian rhythms in organisms. The first half of the project takes place on Earth with naturally occurring organisms fit to the 24 hour day. The second half of the project takes place on Mars with organisms synthetically modified organisms who have had their circadian rhythms optimized to a Martian 25 hour day. The aim of this project is to display it in areas of Boston with various groups of people with different ideas and knowledge of synthetic biology. We want to get their opinions of the art anonymously to understand how far people are comfortable with the usage of synthetic modification in unusual situations. </p>
+  <p class="body-type mainwrap indented">&nbsp;</p>
+  <div class="carousel mainwrap body-type">
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="3" annot="Sai works on the painting."> <img src="http://2017.igem.org/wiki/images/d/db/T--BostonU--SaiPainting2.jpg"  alt="Slide 3"> </div>
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="2" annot="Sai works on the painting."> <img src="http://2017.igem.org/wiki/images/5/5f/T--BostonU--SaiPainting1.jpg"  alt="Slide 2"> </div>
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="1" annot=""> <img src="http://2017.igem.org/wiki/images/f/ff/T--BostonU--CircadiaSynthetica.png" alt="Slide 1"> </div>
+    <div class="counter" count="3"> / 3</div>
+  </div>
+  <p class="inline-heading-type mainwrap">&nbsp;</p>
+  <p class="inline-heading-type mainwrap"id="summerpathways">Outreach: Summer Pathways</p>
+  <p class="body-type mainwrap indented">In June, we partnered with STEM Pathways and the BostonU Hardware team to host Summer Pathways, a synthetic biology Workshop for high school girls interested in STEM fields. We organized and led four interactive activities to introduce them to synthetic biology. </p>
+  <p class="body-type mainwrap indented">Our activities included a bioethics forum, a plasmid design activity, a gel electrophoresis with foody dye activity, and a microfluidic design activity. The bioethics forum was led by Steve, Sophia, and Manu. They held a fishbowl discussion about controversial issues in synthetic biology such as CRISPR and germline gene editing. The forum allowed us to hear opinions about synbio from those outside the field.</p>
+  <p class="body-type mainwrap indented">Thomas and Jason, a member of <a href="#" style="text-indent:0pt;">STEM Pathways</a>, led a plasmid design activity in which they introduced the girls to plasmids, primers, and restriction enzymes. After the participants constructed plasmids using construction paper and scissors, Thomas and Jason demoed Benchling, the software we use to design plasmids in our lab.</p>
+  <p class="body-type mainwrap indented">The third station, gel electrophoresis with food dye, was adapted from <a href="#" style="text-indent:0pt;">William and Mary's 2013 Synthetic Biology K-12 curriculum</a>. In this activity, Abbey, Sai, and Madeline discussed the basic biology and protocol of gel electrophoresis. Each participant then loaded a sample of food dye into a gel with a disposable pipette. The final activity, microfluidic design, was led by the BostonU Hardware team. The team first gave a basic overview of what microfluidics are and what applications they have in synbio. The participants were then given a basic protocol for <em>E. coli</em> transformation and challenged to design their own microfluidic chip on cardboard to perform the procedure.</p>
+  <div class="carousel mainwrap body-type">
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="5" annot="The end result: the food dye separated out into its consituitive colors on the gel after 15 minutes, demonstrating how we use gel electrophoresis in our research."> <img src="http://2017.igem.org/wiki/images/8/81/T--BostonU--Gel.jpg" alt="Slide 5"> </div>
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="4" annot="Sai and Abbey give Summer Pathways participants instructions about lab safety and the science behind gel electrophoresis."> <img src="http://2017.igem.org/wiki/images/d/de/T--BostonU--Gel1.jpg" alt="Slide 4"> </div>
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="3" annot="We prepared a problem-solving exercise that simulated the process of digestion and ligation with restriction enzymes. Participants were asked to 'digest' paper plasmids with scissors at real recognition sites and 'recombine' a new genetic device."> <img src="http://2017.igem.org/wiki/images/f/fe/T--BostonU--Benchling2.jpg"  alt="Slide 3"> </div>
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="2" annot="Stephen, Sophia, and mentor Manu lead a casual forum on the ethics and philosopy of synthetic biology now and in the future."> <img src="http://2017.igem.org/wiki/images/3/32/T--BostonU--Bioethics1.jpg"  alt="Slide 2"> </div>
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="1" annot="A group photo of everyone involved in Summer Pathways 2017."> <img src="http://2017.igem.org/wiki/images/c/c5/T--BostonU--SummerPathways2.jpg" alt="Slide 1"> </div>
+    <div class="counter" count="5"> / 5</div>
+</div>
+  <p class="inline-heading-type mainwrap">&nbsp;</p>
+  <p class="inline-heading-type mainwrap">Industry Visits</p>
+  <p class="body-type mainwrap indented">In August, we visited <a href="#" style="text-indent:0pt;">Ginkgo Bioworks</a> in Boston's Seaport District. We toured their lab facilities, and were impressed by their automated workflow. We were shown some projects relating to synthetic fragrances and toured the workbench of <a href="#" style="text-indent:0pt;">Natzai Audrey Chieza</a>, Ginkgo's current artist-in-residence, who uses bacteria to dye fabrics. Afterwards, we had a discussion with Ginkgo's creative director Christina Agapakis about Ginkgo Bioworks' interfaces of art and synthetic biology, and her experiences collaborating with artists and creating topical art herself. Our discussion inspired us to approach art that interfaced with the future of synthetic biology as the mainstay our human practices project.</p>
+  <p class="body-type mainwrap indented">We also visited the <a href="#" style="text-indent:0pt;">Fraunhofer Center for Manufacturing Innovation</a> with BostonU_Hardware to inform our collaboration towards a microfluidic platform for RNA detection. They provided us with a wealth of knowledge about the considerations needed to translate a biological protocol to a microfluidic device at scale. More information about this collaboration can be found <a href="#" style="text-indent:0pt;">here</a>.</p>
+  <p class="body-type mainwrap indented">&nbsp;</p>
+  <div class="carousel mainwrap body-type">
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="2" annot="Kit from Ginkgo holds up Natzai Audrey Chieza's work. Natzai is Ginkgo's current artist-in-residence, who uses bacteria to dye textiles."> <img src="http://2017.igem.org/wiki/images/c/ca/T--BostonU--Ginkgo2.jpg"  alt="Slide 2"> </div>
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="1" annot="The door to Ginkgo Bioworks' facility in Seaport."> <img src="http://2017.igem.org/wiki/images/2/2c/T--BostonU--Ginkgo1.jpg" alt="Slide 1"> </div>
+    <div class="counter" count="2"> / 2</div>
+  </div>
+  <p class="inline-heading-type mainwrap">&nbsp;</p>
+  <p class="inline-heading-type mainwrap">Critically-Acclaimed JoVE Video</p>
+  <p class="body-type mainwrap indented">While making our cellfree transcription-translation system we used a modified version of the Noireaux Lab TX-TL protocol supplemented by <a href="#" style="text-indent:0pt;">its JoVE video.</a> After utilizing the JoVE protocol video throughout the process of making our own TX-TL system, we realized the utility of step-by-step protocol videos that are easily accessible. In order to add to the JoVE video collection focused on the TX-TL system, we decided to enter the <a href="#" style="text-indent:0pt;">JoVE Film your research contest</a>. In our video, we detail how we test our constructs in the TX-TL system and provide a theoretical understanding of how the TX-TL system works on a molecular level. </p>
+  <p class="body-type mainwrap indented">&nbsp;</p>
+  <p class="body-type mainwrap indented">VIDEO HERE!</p>
+  <p class="body-type mainwrap indented">&nbsp;</p>
+  <p class="inline-heading-type mainwrap">&nbsp;</p>
+</div>
+<div id="backgroundimage2">
+  <div class="background-gradient-up"> </div>
+</div>
+<script> /* THIS MAKES ANY WRAPPED ELEMENT ON THE PAGE FADE IN */
+$(document).ready(function () {
+    $('.mainwrap').fadeIn(1000);
+});
+</script>
+</body>
+</html>

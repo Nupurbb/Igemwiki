@@ -1,0 +1,279 @@
+{{BU17_template_global}}
+{{BU17_template_menubar}}
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,900" rel="stylesheet"> 
+<style>
+#top_menu_inside ul li > a { /* RECOLORS IGEM MENU */
+	color: #a9a9a9 !important;
+}
+.menu-type {
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 5 pt !important;
+	font-size: 14pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.wide-heading-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24pt !important;
+	letter-spacing: 5pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.body-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt !important;
+	text-decoration: none !important;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.caption-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18pt !important;
+	text-decoration: none !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.inline-heading-type {
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 20pt !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	line-height: 2 pt !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.float-left {
+	float: left !important;	
+}
+.float-right {
+	float: right !important;	
+}
+.align-right {
+	text-align: right !important;	
+}
+.align-center {
+	text-align: center !important;	
+}
+.indented {
+	text-indent: 80px;
+}
+.mainwrap {
+	width: 90%;
+	max-width: 960px;
+	min-width: 360px;
+	margin: 0 auto;
+	top:0;
+	display: none;
+}
+body {
+	background-image: url("http://2017.igem.org/wiki/images/c/c7/T--BostonU--SaiPipetting2.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+}
+#backgroundimage1 {
+	margin-top: -85px;
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	align-content:center;
+	text-align:center
+	vertical-align:middle;
+}
+#backgroundimage1 p {
+	top: 40%;
+	color: #FEFEFE;
+	position: relative;
+}
+.background-gradient-down {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,0) 0%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-up {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&1+0,0+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#00efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-both {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+50,efefee+100&1+0,0+50,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 50%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+#panel1 {
+	background: #EFEFEE;
+	width: 100%;
+	color: #1d1d1d;
+	z-index: 1;
+}
+#backgroundimage2 {
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	position: relative;
+}
+#backgroundimage2 p {
+	top: 40%;
+	color: #8C181B;
+}
+#protocol-accordion .ui-accordion-content  {
+	background: #FFFFFF;
+	color: #A9A9A9;
+	border-radius: 20px;
+}
+#protocol-accordion .ui-accordion-content > * {
+  margin: 0;
+  padding: 40px;
+}
+.link-slideup {
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #D45B5C;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.link-slideup a::before, .link-slideup a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	overflow: hidden;
+	font-weight: 500;
+}
+.link-slideup a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #A9A9A9;
+	opacity: 1;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: translateY(95%);
+	transform: translateY(95%);
+	opacity: 0.3;
+}
+.link-slideup a:hover::before, .link-slideup a:focus::before {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.figwrap {
+	background: #FFFFFF;
+	width: 80%;
+	border-radius: 5pt;
+	align-content:center;
+}
+.figwrap img {
+	height: 500px;
+	padding: 0 5%;
+}
+.figwrap p {
+	padding: 0 5%;
+}
+</style>
+</head>
+<body>
+<div id="backgroundimage1"><div class="background-gradient-down">
+  <p class="wide-heading-type mainwrap align-center">RESULTS</p>
+</div></div>
+<div id="panel1" class="link-slideup">
+  <p class="inline-heading-type mainwrap">Characterizing Our Cell Free System</p>
+  <p class="body-type mainwrap">The first step in our project was to characterize the activity of the cell-free transcription-translation system we made in house. This characterization required measuring the maximum protein expression levels that can be accomplished in the cell free system. We first designed a model to estimate the concentration of DNA at which fluorescence would saturate in the system. We found that the expression capacity of the system is best modeled as a bell-shaped dose response curve, which we describe in greater detail on our modeling page. We experimentally characterized the cell-free system by measuring the expression of varying concentrations of a plasmid coding for a constitutively active deGFP gene. We found that maximal expression in the cell-free system is achieved around 20 nM concentrations of DNA.</p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/6/60/T--BostonU--MaxDNAData.png"></img>
+  <p class="body-type"><strong>Figure 1.</strong>This figure shows fluorescence from constitutive deGFP plasmids at 10 nM, 20 nM, 30 nM, and 40 nM concentrations as well as a reaction containing no DNA. </p>
+  </div>
+
+
+  <p class="inline-heading-type mainwrap">Characterizing Toehold Switch Activity in Cell Free</p>
+  <p class="body-type mainwrap"> The next step in validating our project was to characterize toehold switch functionality in the cell-free system. The best expression was achieved when activating the toehold switch with RNA trigger at 10,000X concentrations relative to the toehold. In this experiment, fluorescence from reactions with plasmid toeholds and RNA trigger was compared to fluorescence from reactions containing plasmid toehold switches alone, no DNA at all, and a plasmid containing a constitutively active deGFP. Measurable fluorescence is achieved from two different toehold switch/trigger pairs, but the expression is lower than that seen from the constitutively active deGFP. Greater amounts of input RNA may allow for better fluorescence, but the methods we employed for transcribing the trigger DNA to RNA were not able to produce higher concentrations of RNA.</p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/2/2f/T--BostonU--THDataBoth.png"></img>
+  <p class="body-type"><strong>Figure 2.</strong> This figure shows fluorescence from a cell free reaction in which 10 nM toehold plasmids express deGFP in response to RNA triggers at 10,000X concentrations. This is compared to reactions containing no DNA, only toehold plasmid DNA, and a plasmid with constitutively active deGFP. </p>
+  </div>
+
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <p class="inline-heading-type mainwrap"> Characterizing Recombinase Activity in Cell Free </p>
+  <p class="body-type mainwrap"> Once toehold switches were functional in the cell-free system, we shifted to cloning recombinase genes that could function in our cell free system. We first characterized the performance of commercially available Cre recombinase (NEB) in cell-free. Using a terminator excision reporter plasmid (shown below), the Cre recombinase should excise the premature terminator and allow for downstream deGFP expression. When fluorescence from this reporter plasmid with added Cre recombinase is compared to fluorescence from a reaction with no DNA and a reaction with constitutively active deGFP, only background levels of fluorescence are seen from the reporter. In order to explore this negative result further, we set up a reaction with Cre recombinase and the constitutively active deGFP plasmid. The goal of this experiment is to observe how the Cre recombinase itself affects the transcriptional and translational activity of the cell-free system.  In this experiment, we saw that the fluorescence level achieved by the constitutively active deGFP was only 25% of the fluorescence levels achieved without recombinases in the solution. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/4/48/T--BostonU--CreData.png"></img>
+  <p class="body-type"><strong>Figure 3.</strong>This figure shows fluorescence from a cell free reaction in which 1 unit of Cre recombinase was added to 10 nM reporter plasmids in order to drive deGFP expression. This is compared to reactions containing no DNA, only reporter plasmid DNA, a plasmid with constitutively active deGFP, and a reaction with 1 unit of Cre added to the constitutive deGFP plasmid. </p>
+  </div>
+
+  <p class="body-type mainwrap">&nbsp;</p>
+
+
+  <p class="body-type mainwrap">Our next step was to determine if similar results occurred when testing with plasmid contained recombinases. We tested a plasmid-bound BxbI recombinase and a reporter plasmid with an inverted promoter (shown below). The BxbI recombinase should put the promoter in the proper orientation, allowing for deGFP expression. Fluorescence from a reaction containing recombinase and reporter again shows only background levels of fluorescence as compared to a reaction with no DNA. A reaction containing the recombinase and the constitutively active deGFP showed expression at about 66% as compared to a reaction containing just a constitutively active deGFP plasmid. In this case, we believe that the decrease may be caused by transcription and translation machinery is being diverted to produce the recombinase. Future experiments will be aimed at testing additional types of recombinases in cell free and understanding in more detail the mechanisms leading to the decreased deGFP expression.  </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+    <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/5/5e/T--BostonU--BxbIData.png"></img>
+  <p class="body-type"><strong>Figure 4.</strong> This figure shows fluorescence from a cell free reaction in which a constitutive BxbI recombinase plasmid was added to 10 nM reporter plasmids in order to drive deGFP expression. This is compared to reactions containing no DNA, only reporter plasmid DNA, a plasmid with constitutively active deGFP, and a reaction with the constitutive BxbI recombinase plasmid added to the constitutive deGFP plasmid. </p>
+  </div>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+</div>
+<div id="backgroundimage2"><div class="background-gradient-up">
+</div></div>
+<script> /* THIS MAKES ANY WRAPPED ELEMENT ON THE PAGE FADE IN */
+$(document).ready(function () {
+    $('.mainwrap').fadeIn(1000);
+});
+</script>
+</body>
+</html>

@@ -98,7 +98,7 @@ body {
 	height: 360px;
 	width: 100%;
 	align-content:center;
-	text-align:center;
+	text-align:center
 	vertical-align:middle;
 }
 #backgroundimage1 p {
@@ -205,19 +205,130 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', end
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
-#overview_description {
-	width: 720px;
+/* --- Carousel --- */
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+.carousel:hover .slide:after,
+.carousel:hover .counter,
+.carousel:hover .slide:before {
+  opacity: 1;
+}
+.slide {
+  float: right;
+  position: absolute;
+  z-index: 1;
+  width: 600px;
+  height: 400px;
+  background-color: #eee;
+  text-align: center;
+  transition: opacity 0.4s;
+  opacity: 1;
+}
+.slide:before {
+  content: attr(annot);
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  font-weight: 300;
+  z-index: 12;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-shadow: 0 0 1px #000;
+}
+.slide:after {
+  content: attr(slide);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.3s;
+  width: 100%;
+  height: 80px;
+  opacity: 0;
+  background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
+  text-align: left;
+  text-indent: 549px;
+  line-height: 101px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 0 1px #000;
+}
+.counter {
+  position: absolute;
+  bottom: 20px;
+  right: 1px;
+  height: 20px;
+  width: 60px;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  line-height: 21px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.faux-ui-facia {
+  top: 0;
+  right: 0;
+  float: right;
+  position: absolute;
+  margin-top: 0;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.faux-ui-facia:checked {
+  z-index: 8;
+}
+.faux-ui-facia:checked + .slide {
+  opacity: 0;
+}
+.faux-ui-facia:checked:nth-child(1):checked {
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked {
+  float: left;
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked + .slide {
+  opacity: 1;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+  float: left;
+  z-index: 8;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+  opacity: 0;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+  opacity: 1;
+}
+/* --- END of Carousel --- */
 </style>
 </head>
 <body>
 <div id="backgroundimage1"><div class="background-gradient-down">
-  <p class="wide-heading-type mainwrap align-center">PROJECT OVERVIEW</p>
+  <p class="wide-heading-type mainwrap align-center">LAB NOTEBOOK</p>
 </div></div>
 <div id="panel1" class="link-slideup">
-<div id="overview_description"class="mainwrap">
-<img class=""src="http://2017.igem.org/wiki/images/a/af/T--BostonU--overview_description.svg"></img>
-</div>
+  <p class="body-type mainwrap indented">&nbsp;</p>
+  <p class="body-type mainwrap indented">Our Benchling-based lab notebook is available here as a PDF. It contains protocols, experimental setups, and everyday trials and tribulations at the lab bench that other teams may find useful or interesting.</p>
+  <p class="body-type mainwrap indented">&nbsp;
+  <object class="mainwrap" width="850px" height="1100px" align="middle" data="http://2017.igem.org/wiki/images/3/3b/T--BostonU--benchling_notebook.pdf"></object> 
+ &nbsp;</p>
 </div>
 <div id="backgroundimage2"><div class="background-gradient-up">
 </div></div>

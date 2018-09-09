@@ -1,0 +1,875 @@
+{{BU17_template_global}}
+{{BU17_template_menubar}}
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,900" rel="stylesheet"> 
+<style>
+#top_menu_inside ul li > a { /* RECOLORS IGEM MENU */
+	color: #a9a9a9 !important;
+}
+.menu-type {
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 5 pt !important;
+	font-size: 14pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.wide-heading-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24pt !important;
+	letter-spacing: 5pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.body-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt !important;
+	text-decoration: none !important;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.caption-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18pt !important;
+	text-decoration: none !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.inline-heading-type {
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 20pt !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	line-height: 2 pt !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.float-left {
+	float: left !important;	
+}
+.float-right {
+	float: right !important;	
+}
+.align-right {
+	text-align: right !important;	
+}
+.align-center {
+	text-align: center !important;	
+}
+.indented {
+	text-indent: 80px;
+}
+.mainwrap {
+	width: 90%;
+	max-width: 960px;
+	min-width: 360px;
+	margin: 0 auto;
+	top:0;
+	display: none;
+}
+body {
+	background-image: url("http://2017.igem.org/wiki/images/c/c7/T--BostonU--SaiPipetting2.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+}
+#backgroundimage1 {
+	margin-top: -85px;
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	align-content:center;
+	text-align:center
+	vertical-align:middle;
+}
+#backgroundimage1 p {
+	top: 40%;
+	color: #FEFEFE;
+	position: relative;
+}
+.background-gradient-down {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,0) 0%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-up {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&1+0,0+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#00efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-both {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+50,efefee+100&1+0,0+50,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 50%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+#panel1 {
+	background: #EFEFEE;
+	width: 100%;
+	color: #1d1d1d;
+	z-index: 1;
+}
+#backgroundimage2 {
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	position: relative;
+}
+#backgroundimage2 p {
+	top: 40%;
+	color: #8C181B;
+}
+#protocol-accordion .ui-accordion-content  {
+	background: #FFFFFF;
+	color: #A9A9A9;
+	border-radius: 20px;
+}
+#protocol-accordion .ui-accordion-content > * {
+  margin: 0;
+  padding: 40px;
+}
+.link-slideup {
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #D45B5C;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.link-slideup a::before, .link-slideup a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	overflow: hidden;
+	font-weight: 500;
+}
+.link-slideup a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #A9A9A9;
+	opacity: 1;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: translateY(95%);
+	transform: translateY(95%);
+	opacity: 0.3;
+}
+.link-slideup a:hover::before, .link-slideup a:focus::before {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+/* --- Carousel --- */
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.carousel:hover .slide:after,
+.carousel:hover .counter,
+.carousel:hover .slide:before {
+  opacity: 1;
+}
+.slide {
+  float: right;
+  position: absolute;
+  z-index: 1;
+  width: 600px;
+  height: 400px;
+  background-color: #eee;
+  text-align: center;
+  transition: opacity 0.4s;
+  opacity: 1;
+}
+.slide:before {
+  content: attr(annot);
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  font-weight: 300;
+  z-index: 12;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-shadow: 0 0 1px #000;
+}
+.slide:after {
+  content: attr(slide);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.3s;
+  width: 100%;
+  height: 80px;
+  opacity: 0;
+  background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
+  text-align: left;
+  text-indent: 549px;
+  line-height: 101px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 0 1px #000;
+}
+.counter {
+  position: absolute;
+  bottom: 20px;
+  right: 1px;
+  height: 20px;
+  width: 60px;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  line-height: 21px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.faux-ui-facia {
+  top: 0;
+  right: 0;
+  float: right;
+  position: absolute;
+  margin-top: 0;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.faux-ui-facia:checked {
+  z-index: 8;
+}
+.faux-ui-facia:checked + .slide {
+  opacity: 0;
+}
+.faux-ui-facia:checked:nth-child(1):checked {
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked {
+  float: left;
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked + .slide {
+  opacity: 1;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+  float: left;
+  z-index: 8;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+  opacity: 0;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+  opacity: 1;
+}
+/* --- END of Carousel --- */
+</style>
+</head>
+<body>
+<div id="backgroundimage1"><div class="background-gradient-down"><p class="wide-heading-type mainwrap align-center">PROTOCOLS</p></div></div>
+<div id="panel1"class="link-slideup">
+  <p class="body-type mainwrap"><strong>Below is an interactive list of the laboratory techniques employed by the team. Click to navigate to that protocol.</strong></p>
+  <p class="mainwrap body-type">
+      <a href="#KODPCR">KOD PCR</a>, 
+      <a href="#ColonyPCR">Colony PCR</a>, 
+      <a href="#OEPCR">Overlap Extention PCR</a>, 
+      <a href="#1AGel">Making a 1% Agarose Gel</a>, 
+      <a href="#Electrophoresis">Agarose Gel Electrophoresis</a>, 
+      <a href="#CellStock">Cell Stock</a>, 
+      <a href="#Miniprep">Miniprep</a>, 
+      <a href="#GelExtraction">Gel Extraction</a>, 
+      <a href="#PCRCleanup">PCR Cleanup</a>, 
+      <a href="#Digestion">Digestion</a>, 
+      <a href="#Ligation">Ligation</a>, 
+      <a href="#Transformation">Transformation</a>, 
+      <a href="#LiquidCultures">Liquid Cultures</a>, 
+      <a href="#TestCuts">Test Cuts</a>, 
+      <a href="#Gibson">Gibson</a>, 
+      <a href="#Recombination">Recombination Reaction</a>, 
+      <a href="#CellFree">Cell-Free Reaction</a>, 
+      <a href="#MakingCF">Making Cell Free</a>
+      </p>
+<div id="protocol-accordion"class="mainwrap">
+  <a class="anchor" name="KODPCR"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">KOD PCR</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>5% DMSO</li>
+      <li>2x KOD Hot Start Master Mix</li>
+      <li>PCR Tubes</li>
+      <li>Forward Primers(s) [10 uM]</li>
+      <li>Reverse Primer(s) [10 uM]</li>
+      <li>DNA Template</li>
+      <li>Deionized water</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 18.5 uL of deionized water to PCR tube</li>
+      <li>Add 1.5 µl of both the requisite Forward and Reverse Primers to PCR tube</li>
+      <li>Add 1 ul of DNA template</li>
+      <li>Add 27.5 µl of KOD Hot start Master Mix to PCR tube</li>
+      <li>Centrifuge for 10 seconds to remove air bubbles</li>
+      <li>Place in Thermocycler</li>
+    </ol>
+    <p class="body-type">
+    Thermocycler Conditions
+    </p>
+    <table class="body-type" frame="box">
+      <tr>
+        <th>Number of Cycles</th>
+        <td>From 20 - 40</td>
+      </tr>
+      <tr>
+        <th>Annealing Temperature</th>
+        <td>Set temperature to the lowest primer melt temperature</td>
+      </tr>
+      <tr>
+        <th>Extension Time</th>
+        <td>If target size is: <BR>< 500 bp run 10 sec/kb<BR>500-1000 bp run 15 sec/kb<BR>1000-3000 bp run 20 sec/kb<BR>< 3000 bp run 20 sec/kb</td>
+      </tr>
+    </table>
+  </div>
+  <a class="anchor" name="ColonyPCR"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Colony PCR</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>5% DMSO</li>
+      <li>2x KOD Hot Start Master Mix</li>
+      <li>PCR Tubes</li>
+      <li>Forward Primers(s) [10 uM]</li>
+      <li>Reverse Primer(s) [10 uM]</li>
+      <li>DNA Template</li>
+      <li>Deionized water</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Prepare the DNA template by picking a colony from a plate and mixing it into 10 uL of deionized water in a PCR tube</li>
+      <li>Add 17.5 µl of deionized water to another PCR tube</li>
+      <li>Add 1.5 µl of both the requisite Forward and Reverse Primers to the second PCR tube</li>
+      <li>Add 2 ul of water containing cells with DNA template sample</li>
+      <li>Add 27.5 µl of KOD Hot Start Master Mix</li>
+      <li>Centrifuge for 10 seconds to remove air bubbles</li>
+      <li>Place in Thermocycler</li>
+    </ol>
+ <p class="body-type">
+    Thermocycler Conditions
+    </p>
+    <table class="body-type" frame="box">
+      <tr>
+        <th>Number of Cycles</th>
+        <td>From 20 - 40</td>
+      </tr>
+      <tr>
+        <th>Annealing Temperature</th>
+        <td>Set temperature to the lowest primer melt temperature</td>
+      </tr>
+      <tr>
+        <th>Extension Time</th>
+        <td>If target size is: <BR>< 500 bp run 10 sec/kb<BR>500-1000 bp run 15 sec/kb<BR>1000-3000 bp run 20 sec/kb<BR>< 3000 bp run 20 sec/kb</td>
+      </tr>
+    </table>
+  </div>
+  <a class="anchor" name="OEPCR"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Overlap Extension PCR</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>5% DMSO</li>
+      <li>2x KOD Hot Start Master Mix</li>
+      <li>PCR Tubes</li>
+      <li>Forward Primers(s) [10 uM]</li>
+      <li>Reverse Primer(s) [10 uM]</li>
+      <li>DNA Template</li>
+      <li>Deionized water</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add equimolar concentrations of each DNA sample to a PCR tube</li>
+      <li>Add 1.5 uL of each Forward and Reverse Primer</li>
+      <li>Add 27.5 uL of KOD Hot Start Master Mix</li>
+      <li>Add deionized water until the total volume is 50 uL</li>
+      <li>Place in Themocycler</li>
+    </ol>
+    <p class="body-type">
+    Thermocycler Conditions
+    </p>
+    <table class="body-type" frame="box">
+      <tr>
+        <th>Number of Cycles</th>
+        <td>From 20 - 40</td>
+      </tr>
+      <tr>
+        <th>Annealing Temperature</th>
+        <td>Set temperature to the lowest primer melt temperature</td>
+      </tr>
+      <tr>
+        <th>Extension Time</th>
+        <td>If target size is: <BR>< 500 bp run 10 sec/kb<BR>500-1000 bp run 15 sec/kb<BR>1000-3000 bp run 20 sec/kb<BR>< 3000 bp run 20 sec/kb</td>
+      </tr>
+    </table>
+  </div>
+  <a class="anchor" name="1AGel"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Making a 1% Agarose Gel</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>Agarose</li>
+      <li>1x TAE Buffer</li>
+      <li>Ethidium Bromide</li>
+      <li>250 mL Flask</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 0.6 g of agarose to 250 mL flask</li>
+      <li>Add 60 mL of 1x TAE buffer and mix by swirling the flask</li>
+      <li>Microwave mixture for 60 seconds</li>
+      <li>Add 3 uL of Ethidium Bromide and mix gently</li>
+      <li>Pour into gel tray with the desired comb size and wait 30 minutes for it to solidify</li>
+    </ol>
+  </div>
+  <a class="anchor" name="Electrophoresis"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Agarose Gel Electrophoresis</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>Agarose Gel</li>
+      <li>6x Loading Dye</li>
+      <li>2 log DNA ladder</li>
+      <li>Gel Box</li>
+      <li>1x TAE Buffer</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 6x loading dye to each sample</li>
+      <li>Place agarose gel into gel box</li>
+      <li>Fill gel box with 1x TAE buffer to fill line</li>
+      <li>Load 2 log ladder and samples into wells</li>
+      <li>Run gel at 135 V for 30-40 minutes</li>
+    </ol>
+  </div>
+  <a class="anchor" name="CellStock"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Cell Stock</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>Liquid Cell Culture</li>
+      <li>50% Glycerol</li>
+      <li>Cryofreezer Tube</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 600 ul of glycerol into cryotube</li>
+      <li>Add 600 ul of culture to cryotube</li>
+      <li>Mix gently by pipetting up and down</li>
+      <li>Freeze and store at -80&#8451;</li>
+    </ol>
+  </div>
+  <a class="anchor" name="Miniprep"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Miniprep</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>1.7 mL Microcentrifuge Tubes</li>
+      <li>Spin Columns</li>
+      <li>Spin Tubes</li>
+      <li>MX1 Buffer</li>
+      <li>MX2 Buffer</li>
+      <li>MX3 Buffer</li>
+      <li>WN Buffer</li>
+      <li>WS Buffer</li>
+      <li>Elution Buffer</li>
+      <li>Centrifuge</li>
+      <li>Vacuum Manifold</li>
+      <li>55&#8451; Bead Bath</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Prepare the Elution Buffer by placing it in the 55&#8451; bead bath</li>
+      <li>Transfer the sample to a microcentrifuge tube and spin for 2 minutes at 13,000 rpm</li>
+      <li>Pour off the supernatant from the pellet</li>
+      <li>Pipette 200 uL of MX1 into the samples and vortex to resuspend</li>
+      <li>Pipette 250 uL of MX2 into the samples and invert the tube ~5 times</li>
+      <li>Pipette 350 uL of MX3 into the samples and invert the tube ~5 times</li>
+      <li>Centrifuge at MAX speed for 5 minutes</li>
+      <li>Pour the supernatant off the microcentrifuge tubes into spin columns and turn on the vacuum manifold</li>
+      <li>Pipette 500 uL of WN buffer into each column</li>
+      <li>Pipette 700 uL of WS buffer into each column</li>
+      <li>Turn of vacuum manifold and place spin columns in collection tubes</li>
+      <li>Centrifuge for 3 minutes at MAX speed and discard collection tubes. Place the spin column in a new microcentrifuge tube</li>
+      <li>Pipette 50 uL of Elution Buffer right above the membrane of the column without touching the membrane with the pipette tip. Let the column sit for 2 minutes</li>
+      <li>Centrifuge for 60 seconds at MAX speed</li>
+      <li>Nanodrop DNA for concentration and store in at -20&#8451;</li>
+    </ol>
+  </div>
+  <a class="anchor" name="GelExtraction"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Gel Extraction</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>1.7ml Microcentrifuge Tubes</li>
+      <li>Spin Columns</li>
+      <li>Spin Tubes</li>
+      <li>GEX Buffer</li>
+      <li>WN Buffer</li>
+      <li>WS Buffer</li>
+      <li>Centrifuge</li>
+      <li>Vacuum Manifold</li>
+      <li>55&#8451; Bead Bath</li>
+   </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Prepare the Elution Buffer by placing it in the 55&#8451; bead bath</li>
+      <li>Place excised gel fragment in a microcentrifuge tube and add 700 uL of GEX buffer</li>
+      <li>Place tubes in the 55&#8451; bead bath and wait for the gel fragment to fully dissolve</li>
+      <li>Transfer contents to spin columns that are place on the vacuum manifold. Turn on manifold</li>
+      <li>Pipette 500 uL of WN buffer into each column</li>
+      <li>Pipette 500 uL of WS buffer into each column</li>
+      <li>Turn of vacuum manifold and place spin columns in collection tubes</li>
+      <li>Centrifuge for 3 minutes at MAX speed and discard collection tubes. Place the spin column in a new microcentrifuge tube</li>
+      <li>Pipette 30 uL of Elution Buffer right above the membrane of the column without touching the membrane with the pipette tip. Let the column sit for 2 minutes.</li>
+       <li>Centrifuge for 60 seconds at MAX speed</li>
+      <li>Nanodrop DNA for concentration and store in at -20&#8451;</li>
+     </ol>
+  </div>
+  <a class="anchor" name="PCRCleanup"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">PCR Cleanup</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>1.7ml Microcentrifuge Tubes</li>
+      <li>Spin Columns</li>
+      <li>Spin Tubes</li>
+      <li>PX Buffer</li>
+      <li>WN Buffer</li>
+       <li>WS Buffer</li>
+      <li>Centrifuge</li>
+      <li>Vacuum Manifold</li>
+      <li>55&#8451; Bead Bath</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 10-100ul of PCR product into 1.7ml microcentrifuge tube</li>
+      <li>Add 500ul of PX buffer to microcentrifuge tube</li>
+      <li>Transfer contents to spin columns that are place on the vacuum manifold. Turn on manifold</li>
+      <li>Pipette 500 uL of WN buffer into each column</li>
+      <li>Pipette 500 uL of WS buffer into each column</li>
+      <li>Turn of vacuum manifold and place spin columns in collection tubes</li>
+      <li>Centrifuge for 3 minutes at MAX speed and discard collection tubes. Place the spin column in a new microcentrifuge tube</li>
+      <li>Pipette 30 uL of Elution Buffer right above the membrane of the column without touching the membrane with the pipette tip. Let the column sit for 2 minutes.</li>
+      <li>Centrifuge for 60 seconds at MAX speed</li>
+      <li>Nanodrop DNA for concentration and store in at -20&#8451;</li>
+    </ol>
+  </div>
+  <a class="anchor" name="Digestion"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Digestion</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>Restriction Enzymes (keep on ice or ice block)</li>
+      <li>Restriction Enzyme Buffer</li>
+      <li>DNA</li>
+      <li>Deionized water</li>
+      <li>PCR Tubes</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 4ug of plasmid DNA or 2ug of linear DNA to PCR tube</li>
+      <li>Total amount of enzymes added should be 4ul</li>
+      <li>Add 5ul of compatible buffer for restriction enzymes</li>
+      <li>Add deionized water to a total volume of 50ul</li>
+      <li>Place in thermocycler</li>
+      <li>If adding CIP- add 1ul of CIP to the sample in the final 20 minutes while the sample remains in the thermocycler</li>
+    </ol>
+  </div>
+  <a class="anchor" name="Ligation"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Ligation</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>T4 DNA Ligase (keep on ice or ice block)</li>
+      <li>T4 DNA Ligase Buffer</li>
+      <li>DNA</li>
+      <li>Deionized Water</li>
+      <li>PCR Tubes</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add equimolar concentrations of DNA fragments to PCR tube</li>
+      <li>Add equimolar concentrations of DNA fragments to PCR tube</li>
+      <li>Add 1ul of T4 DNA ligase</li>
+      <li>Add deionized water to a final volume of 20ul</li>
+      <li>Leave on bench for 20 minutes</li>
+      <li>Heat inactivate by placing sample in 70&#8451; bead bath for 1 minute</li>
+    </ol>
+  </div>
+  <a class="anchor" name="Transformation"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Transformation</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>KCM</li>
+      <li>Top 10 Competent Cells</li>
+      <li>Deionized Water</li>
+      <li>PCR Tubes</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 10ul of KCM to sample</li>
+      <li>Add deionized water to 50ul</li>
+      <li>Transfer contents of sample to Top Ten Cells</li>
+      <li>Place in thermocycler when the block reaches 4&#8451;</li>
+      <li>Once finished in thermocycler spread the entire sample onto plates</li>
+    </ol>
+  </div>
+  <a class="anchor" name="LiquidCultures"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Liquid Cultures</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>12ml Culture Tubes</li>
+      <li>Liquid Media</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 4ml of liquid media to culture tube</li>
+      <li>Pick colony and eject tip into culture tube</li>
+      <li>Incubate in a 37°C shaking incubator for 16-18 hours</li>
+    </ol>
+  </div>
+  <a class="anchor" name="TestCuts"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Test Cuts</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>Restriction Enzymes</li>
+      <li>Restriction Enzyme Buffer</li>
+      <li>DNA</li>
+      <li>Deionized Water</li>
+      <li>Microcentrifuge Tubes</li>
+       <li>PCR Tubes</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Make a master mix with the following volumes in a microcentrifuge tube: 1ul of Buffer, 0.25ul of each Restriction Enzyme, 6.5ul of Deionized Water</li>
+      <li>Add 2ul of DNA to 8ul of Master Mix in a PCR tube</li>
+      <li>Incubate reaction at 37°C for at least 15-30 minutes</li>
+      <li>Run on agarose gel</li>
+    </ol>
+  </div>
+  <a class="anchor" name="Gibson"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Gibson</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>DNA insert</li>
+      <li>DNA backbone</li>
+      <li>Deionized Water</li>
+      <li>Gibson Master Mix</li>
+      <li>PCR tubes</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add equimolar concentrations of DNA insert and DNA backbone to PCR tube</li>
+      <li>Add deionized water to a total volume of 10ul</li>
+      <li>Add 10ul of Gibson Master Mix</li>
+      <li>Place in thermocycler</li>
+    </ol>
+  </div>
+  <a class="anchor" name="Recombination"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Recombination Reaction</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>250ng of DNA</li>
+      <li>10X of Recombinase Buffer</li>
+      <li>Recombinase</li>
+      <li>Deionized Water</li>
+      <li>PCR Tubes</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 250ng of DNA</li>
+      <li>Add 5ul of 10X Recombinase Buffer</li>
+      <li>Add 1ul of Recombinase</li>
+      <li>Add deionized water to total volume of 50ul</li>
+      <li>Incubate reaction at 37°C for 30 minutes</li>
+      <li> Hit Shock at 70°C for 10 minutes</li>
+    </ol>
+  </div>
+  <a class="anchor" name="CellFree"></a>
+  <h3 class="inline-heading-type">&nbsp;</h3>
+  <h3 class="inline-heading-type">Cell-Free Reaction</h3>
+  <div>
+    <p class="body-type">
+    Materials
+    </p>
+    <ul class="body-type">
+      <li>Cell Free Crude Cell Extract Master Mix</li>
+      <li>Autoclaved Water</li>
+      <li>DNA</li>
+      <li>384 Well Plates</li>
+      <li>PCR Tubes</li>
+      <li>Plate Reader </li>
+      <li>Ice</li>
+    </ul>
+    <p class="body-type">
+    Procedure
+    </p>
+    <ol class="body-type" type="1">
+      <li>Add 4nM of DNA to each PCR tube</li>
+      <li>Add 16.5ul of Cell Free Crude Cell Extract Master Mix to PCR tube</li>
+      <li>Add autoclaved water to total volume of 20ul</li>
+      <li> Centrifuge PCR tubes</li>
+      <li> Transfer reactions from PCR tubes to a 384 Well Plates</li>
+      <li>Take initial fluorescence reading using a plate reader with wavelengths at 485nm and 525nm</li>
+      <li>Incubate plate at 30°C</li>
+      <li>  Measure fluorescence every hour, we found that fluorescence levels out at 6 hours</li>
+    </ol>
+  </div>
+  <a class="anchor" name="MakingCF"></a>
+</div>
+<div id="backgroundimage2"><div class="background-gradient-up">
+</div></div>
+<script> /* THIS MAKES ANY WRAPPED ELEMENT ON THE PAGE FADE IN */
+$(document).ready(function () {
+    $('.mainwrap').fadeIn(1000);
+});
+</script>
+</body>
+</html>

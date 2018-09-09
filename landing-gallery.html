@@ -1,0 +1,359 @@
+{{BU17_template_global}}
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,900" rel="stylesheet"> 
+<style>
+<style>
+<style>
+#top_menu_inside ul li > a { /* RECOLORS IGEM MENU */
+	color: #a9a9a9 !important;
+}
+.menu-type {
+	font-family: 'Roboto', sans-serif !important;
+	letter-spacing: 5pt !important;
+	font-size: 14pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase !important;
+	font-weight: bold !important;
+	text-rendering: geometricPrecision !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+}
+.body-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt !important;
+	text-decoration: none !important;
+	line-height: 2 !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+body {
+	background: #1d1d1d;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	z-index: -100;
+	display: none;
+}
+#mybody {
+	opacity: 0.0;
+	background-color: #f8f9f9;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.wordmark img {
+	margin-top: 4.4%;
+	margin-left: 5%;
+	width: 300px;
+}
+#mainwrap {
+	margin: 0 auto;
+	height: 100% !important;
+}
+#menubartable {
+	border: 0;
+	list-style-type: none;
+	margin-top: 5%;
+	margin-right: 5%;
+	padding: 0;
+	position: relative;
+	float: right;
+	white-space: nowrap;
+	width: 0 auto !important;
+	z-index: 10;
+}
+#menubartable li {
+	display: table-cell;
+}
+li .menuitem, .dropbtn {
+	color: #f8f9f9 !important;
+	display: table-cell;
+	padding: 5px 18px;
+	vertical-align: middle;
+}
+.dropbtn {
+	position: relative;
+	text-decoration: none !important;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+.dropdown-content .menuitem {
+	color: #f8f9f9;
+	display: block;
+	padding: 5px 18px;
+	text-align: left;
+	text-decoration: none;
+}
+#myfooter {
+	position: absolute;
+	bottom: 0pt;
+	width: 100%;
+	height: 15%;
+}
+#myfooterL {
+	position: relative;
+	float: left;
+	width: 45%;
+	height: 50%;
+	text-align: left;
+	padding-left: 5%;
+	vertical-align: middle;
+}
+#myfooterR {
+	position: relative;
+	float: right;
+	width: 45%;
+	height: 50%;
+	text-align: right;
+	padding-right: 5%;
+}
+#myfooterC {
+	position: relative;
+	float: top;
+	width: 100%;
+	height: 50%;
+	text-align: center;
+}
+#myfooter a {
+	vertical-align: center;
+	color: #f8f9f9 !important;
+	text-decoration: none !important;
+}
+#myfooterR img {
+	height: 20px;
+	padding: 0 10px;
+	vertical-align: middle;
+}
+#myfooterR a {
+	padding: 0 22px;
+	vertical-align: middle;
+}
+.fade-in-div {
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	border: none;
+	position: absolute;
+	width: 100%;
+	display: none;
+	z-index: 1;
+}
+#fade-in-wrapper {
+	position: absolute;
+	width: 70%;
+	max-height: 100%;
+	margin: 0 15%;
+	margin-top: 5%;
+}
+#fade-in-wrapper p {
+	color: #4D4D4D;
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+#fade-in-footer {
+	position: absolute;
+	bottom: 0pt;
+	width: 100%;
+	height: 15%;
+}
+#fade-in-footer a {
+	text-align: center;
+	color: #4D4D4D !important;
+	text-decoration: none !important;
+}
+.fade-in-div-2 {
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	border: none;
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+#gallery-wrapper {
+	position: absolute;
+	height: 25%;
+	width: 100%;
+	bottom: 0;
+	align-content: center;
+}
+#gallery-wrapper p {
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	top: 10px;
+	z-index: 1;
+	margin: 0 5%;
+}
+#gallery-tab {
+	background: #f8f9f9;
+	height: 25%;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	z-index: -1;
+}
+.menu-column:hover .dropdown-content { /* MENU DISPLAY ANIMATION */
+	display: block;
+}
+.link-slideup {
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #D45B5C;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.link-slideup a::before, .link-slideup a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	overflow: hidden;
+	font-weight: 500;
+}
+.link-slideup a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #EFEFEE;
+	opacity: 1;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: translateY(95%);
+	transform: translateY(95%);
+}
+.link-slideup a:hover::before, .link-slideup a:focus::before {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+</style>
+</head>
+<body>
+<div id="mainwrap"> <a href="http://2017.igem.org/Team:BostonU" class="wordmark"><img src="http://2017.igem.org/wiki/images/d/de/T--BostonU--LandingPageLogo1.svg"></img></a>
+  <div id="mybody"></div>
+  <ul id="menubartable" class="menu-type">
+
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/Team" class="dropbtn">People</a>
+      <div class="dropdown-content"> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Team">Team</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Attributions">Attributions</a></div>
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/Description" class="dropbtn">Research</a>
+      <div class="dropdown-content"> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Description">Overview</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Experiments">Experiments</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Results">Results</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Model">Modeling</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Notebook">Notebook</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Protocols">Protocols</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Safety">Safety</a> </div>
+    </li>
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/Engagement" class="dropbtn">Beyond the Bench</a>
+      <div class="dropdown-content"><a class="menuitem" href="http://2017.igem.org/Team:BostonU/HP/Silver">Human Practices</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/HP/Gold_Integrated">Integrated Human Practices</a><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Engagement">Engagement</a><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Collaborations">Collaborations</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/InterLab">InterLab Contribution</a> </div>
+    </li>
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/JudgingCriteria" class="dropbtn">Achievements</a>
+      <div class="dropdown-content"> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Overview#Achievements">Overview</a><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Parts">Parts</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/JudgingCriteria">Judging Criteria</a> </div>
+    </li>
+  </ul>  <div id="myfooter" class="menu-type">
+    <div id="myfooterC"><a href="#project" class="fade-in-button">ABOUT US</a></div>
+    <div id="myfooterL"><a href="#gallery" class="fade-in-button-2">ABOUT THIS PHOTO</a></div>
+    <div id="myfooterR"><a>SAY HI</a><a href="https://twitter.com/BostonU_iGEM_WL"><img src="http://2017.igem.org/wiki/images/2/21/T--BostonU--prettysureweareallowedtouploadthis.svg"></img></a> <a href="mailto:bu.igemwl2017@gmail.com"><img style="height: 19px;" src="http://2017.igem.org/wiki/images/c/ca/T--BostonU--MailTo.svg"></img></a> </div>
+  </div>
+  <div class="fade-in-div"> <a class="wordmark" href="http://2017.igem.org/Team:BostonU"><img src="http://2017.igem.org/wiki/images/f/f2/T--BostonU--RedGrey.svg"></img></a>
+    <section id="fade-in-wrapper" class="link-slideup">
+      <p class="body-type">We are the 2017 Boston University Wet-lab iGEM Team! We seek to develop a platform that integrates de novo designed RNA sensors known as toehold switches with recombinase-based molecular computation systems in a cell-free system. By expanding the application space of combinatorial logic to RNAs, we anticipate applications in sensors and theranostics for biological systems with characteristic RNA profiles of any complexity.</p>
+    </section>
+    <div id="fade-in-footer">
+      <div id="myfooterC"><a href="#" class="fade-out-button menu-type">CLOSE THIS WINDOW</a></div>
+      <div id="myfooterL"></div>
+      <div id="myfooterR"></div>
+    </div>
+  </div>
+  <div class="fade-in-div-2">
+    <div id="gallery-tab"></div>
+    <section id="gallery-wrapper" class="link-slideup body-type">
+      <p class="body-type">Something is wrong! The description didn't load properly.</p>
+    </section>
+    <div id="fade-in-footer">
+      <div id="myfooterC"></div>
+      <div id="myfooterL"><a href="#" class="fade-out-button-2 menu-type">CLOSE THIS WINDOW</a></div>
+      <div id="myfooterR"><a href="#" class="toggle menu-type">SHOW ME ANOTHER PICTURE</a></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript"> /* FADE IN SCRIPT */
+$(document).ready(function(){
+	$(".fade-in-button").click(function(){
+		$(".fade-in-div").fadeIn(300);
+    	$("#myfooter").fadeOut(300);
+    	$("#menubartable").fadeOut(300);
+    	$("#mybody").fadeTo(300, 1.0, function() {
+    	});
+	});
+	$(".fade-out-button").click(function(){
+		$(".fade-in-div").fadeOut(300);
+    	$("#myfooter").fadeIn(300);
+    	$("#menubartable").fadeIn(300);
+    	$("#mybody").fadeTo(300, 0.0, function() {
+    	});
+	});
+	$(".fade-in-button-2").click(function(){
+		$(".fade-in-div-2").fadeIn(300);
+    	$("#myfooter").fadeOut(300);
+	});
+	$(".fade-out-button-2").click(function(){
+		$(".fade-in-div-2").fadeOut(300);
+    	$("#myfooter").fadeIn(300);
+	});
+});
+</script> 
+<script type="text/javascript"> /* GALLERY SCRIPT */
+var captions = ["<p class='body-type'>The North End and Charlestown as seen from <a href='#'>Ginkgo Bioworks</a> during our  <a href='#'>July visit</a>.</p>","<p class='body-type'>The team (minus <a href='#'>Thomas</a>) turns a corner inside <a href='#'>Ginkgo Bioworks</a>.</p>","<p class='body-type'>Circadia Synthetica, a triptych designed by Saimrunali Dadigala, explores the application of synthetic circadian rhythms in multiple organisms as as part of our <a href='http://2017.igem.org/Team:BostonU/HP/Silver'>Human Practices</a> work.</p>","<p class='body-type'>Sai uses the vortex in preparation of the cell-free mixture used to host our <a href='http://2017.igem.org/Team:BostonU/Experiments'>experiments</a>.</p>"];
+var links = ["http://2017.igem.org/wiki/images/c/c1/T--BostonU--seaport.png","http://2017.igem.org/wiki/images/9/9b/T--BostonU--hallway.png",
+"http://2017.igem.org/wiki/images/f/ff/T--BostonU--CircadiaSynthetica.png",
+"http://2017.igem.org/wiki/images/c/c9/T--BostonU--SaiPipetting3.png"];
+var maxCounter = 3;
+var counter = maxCounter;
+var bg = '#1d1d1d url('+links[counter]+') no-repeat center center fixed';
+$("#gallery-wrapper").html(captions[counter]);
+document.body.style.background = bg;
+	$(".toggle").click(function(){
+		counter = counter-1;
+		if (counter < 0) {
+			counter = maxCounter;
+		};
+		var bg = '#1d1d1d url('+links[counter]+') no-repeat center center fixed';
+    	document.body.style.background = bg;
+		$("#gallery-wrapper").fadeOut(300, function(){
+			$("#gallery-wrapper").html(captions[counter]).fadeIn(300);
+		});
+	});
+</script>
+<script> /* THIS MAKES BODY CONTENT OF THE PAGE FADE IN */
+$(document).ready(function () {
+    $('body').fadeIn(1000);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,900" rel="stylesheet">
+<style>
+<style>
+#top_menu_inside ul li > a { /* RECOLORS IGEM MENU */
+ color: #a9a9a9 !important;
+}
+.menu-type {
+	font-family: 'Roboto Condensed', sans-serif !important;
+	letter-spacing: 5pt !important;
+	font-size: 12pt;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.wordmark img {
+	vertical-align: sub;
+	width: 200px;
+	margin-left: 5%;
+	margin-right: 50px;
+}
+#menuwrap {
+	margin: 0 auto;
+	max-width: 960px;
+	height: 100px;
+}
+.dropbtn {
+	text-decoration: none !important;
+}
+#menubartable {
+	border: 0;
+	background: #F8F9F9;
+	list-style-type: none;
+	white-space: nowrap;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	padding-top: 100px;
+	margin-top: -80px;
+	padding-left: 3000px;
+	margin-left: -3000px;
+	padding-right: 3000px;
+	margin-right: -3000px;
+}
+#menubartable li {
+	display: table-cell;
+}
+li .menuitem, .dropbtn {
+	color: #a9a9a9 !important;
+	background: #F8F9F9;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 20px 15px;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 10;
+}
+.dropdown-content .menuitem {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+}
+.menu-column:hover .dropdown-content {
+	display: block;
+}
+li .menuitem:hover, li .dropbtn:hover {
+	background: #f4f4f4;
+}
+#masterfooter {
+	position: absolute;
+	border: 0;
+	background: #f8f9f9;
+	list-style-type: none;
+	white-space: nowrap;
+	z-index: 10;
+	width: 100%;
+	bottom: 0;
+	padding-left: 3000px;
+	margin-left: -3000px;
+	padding-right: 3000px;
+	margin-right: -3000px;
+}
+</style>
+</head>
+<body>
+<div id="menuwrap">
+  <ul id="menubartable" class="menu-type">
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU" class="wordmark"><img src="http://2017.igem.org/wiki/images/f/f2/T--BostonU--RedGrey.svg"></img></a> </li>
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/Team" class="dropbtn">People</a>
+      <div class="dropdown-content"> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Team">Team</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Attributions">Attributions</a></div>
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/Description" class="dropbtn">Research</a>
+      <div class="dropdown-content"> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Description">Overview</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Experiments">Experiments</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Results">Results</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Model">Modeling</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Notebook">Notebook</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Protocols">Protocols</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Safety">Safety</a> </div>
+    </li>
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/Engagement" class="dropbtn">Beyond the Bench</a>
+      <div class="dropdown-content"><a class="menuitem" href="http://2017.igem.org/Team:BostonU/HP/Silver">Human Practices</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/HP/Gold_Integrated">Integrated Human Practices</a><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Engagement">Engagement</a><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Collaborations">Collaborations</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/InterLab">InterLab Contribution</a> </div>
+    </li>
+    <li class="menu-column"> <a href="http://2017.igem.org/Team:BostonU/JudgingCriteria" class="dropbtn">Achievements</a>
+      <div class="dropdown-content"> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/Overview#Achievements">Overview</a><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Parts">Parts</a> <a class="menuitem" href="http://2017.igem.org/Team:BostonU/JudgingCriteria">Judging Criteria</a> </div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

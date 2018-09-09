@@ -98,7 +98,7 @@ body {
 	height: 360px;
 	width: 100%;
 	align-content:center;
-	text-align:center;
+	text-align:center
 	vertical-align:middle;
 }
 #backgroundimage1 p {
@@ -205,19 +205,58 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', end
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
-#overview_description {
-	width: 720px;
+.figwrap {
+	background: #FFFFFF;
+	width: 80%;
+	border-radius: 5pt;
+	align-content:center;
+}
+.figwrap img {
+	height: 500px;
+	padding: 0 5%;
+}
+.figwrap p {
+	padding: 0 5%;
 }
 </style>
 </head>
 <body>
 <div id="backgroundimage1"><div class="background-gradient-down">
-  <p class="wide-heading-type mainwrap align-center">PROJECT OVERVIEW</p>
+  <p class="wide-heading-type mainwrap align-center">MODELING</p>
 </div></div>
 <div id="panel1" class="link-slideup">
-<div id="overview_description"class="mainwrap">
-<img class=""src="http://2017.igem.org/wiki/images/a/af/T--BostonU--overview_description.svg"></img>
-</div>
+  <p class="body-type mainwrap">Currently, there is not yet a defined relationship between the concentration of DNA added to the cell-free system and protein expression as well as the maximum amount of DNA that the system can handle. Part of this is due to the variety in capabilities of a particular ‘batch’ of cell-free, even if the same protocol is used. Modeling this relationship allows us to maximize expression when performing experiments that use many different pieces of interacting DNA; such as in later tests where a plasmid containing a toehold switch driving a recombinase interacts with a reporter plasmid. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+ <p class="body-type mainwrap">We collected data on the fluorescence from a plasmid containing constitutive deGFP. The plasmid was added to the cell free reaction at 10 nM, 20 nM, 30 nM, and 40 nM. There was also a reaction with no DNA. The resulting data can be seen in Figure 1. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/6/60/T--BostonU--MaxDNAData.png"></img>
+  <p class="body-type"><strong>Figure 1.</strong>This figure shows fluorescence from constitutive deGFP plasmids at 10 nM, 20 nM, 30 nM, and 40 nM concentrations as well as a reaction containing no DNA. </p>
+  </div>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <p class="body-type mainwrap"> Initially we planned on modeling this capacity with a single logistic curve. The results of this initial model are shown in figure 2.</p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+ <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/1/12/T--BostonU--UniphasticModel.png"></img>
+  <p class="body-type"><strong>Figure 2.</strong>Model of cell free saturation from Figure 1 data based off of a single logistic curve. </p>
+  </div>
+
+  <p class="body-type mainwrap"> After looking at the data more closely, we determined that a more complex curve was required and fit a bell shaped dose response curve. A bell shaped dose response curve is the sum of two dose response curves. Here, low concentrations of DNA stimulate gene expression while high concentrations inhibit gene expression. </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <div class="figwrap mainwrap body-type">
+  <img src="http://2017.igem.org/wiki/images/e/ef/T--BostonU--BiphasticModel.png"></img>
+  <p class="body-type"><strong>Figure 3.</strong>Adapted model of cell free saturation from Figure 1 data based off of the subtraction of one logistic curve from another. </p>
+  </div>
+  <p class="body-type mainwrap">&nbsp;</p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
+  <p class="body-type mainwrap"> From this information, we see that the maximal levels of expression are achieved around 20 nM concentrations of DNA. In the future, when possible we aim to achieve the highest levels of expression by adding no more than 20 nM concentrations of total DNA in the system. For example, when testing plasmid toehold deGFP expression in response to a plasmid trigger, we had to ensure that we did not oversaturate our cell free system. We tuned the concentrations and volumes of these plasmids added in response to the results from this model.  </p>
+  <p class="body-type mainwrap">&nbsp;</p>
+
 </div>
 <div id="backgroundimage2"><div class="background-gradient-up">
 </div></div>

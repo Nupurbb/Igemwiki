@@ -1,0 +1,311 @@
+{{BU17_template_global}}
+{{BU17_template_menubar}}
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,900" rel="stylesheet"> 
+<style>
+#top_menu_inside ul li > a { /* RECOLORS IGEM MENU */
+	color: #a9a9a9 !important;
+}
+.menu-type {
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 5 pt !important;
+	font-size: 14pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.wide-heading-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24pt !important;
+	letter-spacing: 5pt !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.body-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt !important;
+	text-decoration: none !important;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.caption-type {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18pt !important;
+	text-decoration: none !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.inline-heading-type {
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 20pt !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	line-height: 2 pt !important;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.float-left {
+	float: left !important;	
+}
+.float-right {
+	float: right !important;	
+}
+.align-right {
+	text-align: right !important;	
+}
+.align-center {
+	text-align: center !important;	
+}
+.indented {
+	text-indent: 80px;
+}
+.mainwrap {
+	width: 90%;
+	max-width: 960px;
+	min-width: 360px;
+	margin: 0 auto;
+	top:0;
+	display: none;
+}
+body {
+	background-image: url("http://2017.igem.org/wiki/images/f/ff/T--BostonU--CircadiaSynthetica.png");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+}
+#backgroundimage1 {
+	margin-top: -85px;
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	align-content:center;
+	text-align:center
+	vertical-align:middle;
+}
+#backgroundimage1 p {
+	top: 40%;
+	color: #FEFEFE;
+	position: relative;
+}
+.background-gradient-down {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,0) 0%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,0) 0%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-up {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+100&1+0,0+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#00efefee',GradientType=0 ); /* IE6-9 */
+}
+.background-gradient-both {
+	height: 360px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefee+0,efefee+50,efefee+100&1+0,0+50,1+100 */
+background: -moz-linear-gradient(top, rgba(239,239,238,1) 0%, rgba(239,239,238,0) 50%, rgba(239,239,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,239,238,1) 0%,rgba(239,239,238,0) 50%,rgba(239,239,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefee', endColorstr='#efefee',GradientType=0 ); /* IE6-9 */
+}
+#panel1 {
+	background: #EFEFEE;
+	width: 100%;
+	color: #1d1d1d;
+	z-index: 1;
+}
+#backgroundimage2 {
+	background-image: url("#");
+	background-repeat: no-repeat;
+    background-attachment: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	height: 360px;
+	width: 100%;
+	position: relative;
+}
+#backgroundimage2 p {
+	top: 40%;
+	color: #FEFEFE;
+}
+#protocol-accordion .ui-accordion-content  {
+	background: #FFFFFF;
+	color: #A9A9A9;
+	border-radius: 20px;
+}
+#protocol-accordion .ui-accordion-content > * {
+  margin: 0;
+  padding: 40px;
+}
+.link-slideup {
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #D45B5C;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.link-slideup a::before, .link-slideup a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.link-slideup a {
+	overflow: hidden;
+	font-weight: 500;
+}
+.link-slideup a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #A9A9A9;
+	opacity: 1;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: translateY(95%);
+	transform: translateY(95%);
+	opacity: 0.3;
+}
+.link-slideup a:hover::before, .link-slideup a:focus::before {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.figwrap {
+	background: #FFFFFF;
+	width: 80%;
+	border-radius: 5pt;
+	align-content:center;
+}
+.figwrap img {
+	height: 500px;
+	padding: 0 5%;
+}
+.figwrap p {
+	padding: 0 5%;
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-cs4k{font-weight:bold;background-color:#cd7f32;color:#000000;vertical-align:top}
+.tg .tg-7ubv{background-color:#cd7f32;color:#000000;vertical-align:top}
+.tg .tg-5mgg{font-weight:bold;background-color:#c0c0c0;vertical-align:top}
+.tg .tg-le8v{background-color:#c0c0c0;vertical-align:top}
+.tg .tg-1q0s{font-weight:bold;background-color:#ffd700;vertical-align:top}
+.tg .tg-hht7{background-color:#ffd700;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-cs4k{font-weight:bold;background-color:#cd7f32;color:#000000;vertical-align:top}
+.tg .tg-7ubv{background-color:#cd7f32;color:#000000;vertical-align:top}
+.tg .tg-5mgg{font-weight:bold;background-color:#c0c0c0;vertical-align:top}
+.tg .tg-le8v{background-color:#c0c0c0;vertical-align:top}
+.tg .tg-1q0s{font-weight:bold;background-color:#ffd700;vertical-align:top}
+.tg .tg-hht7{background-color:#ffd700;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+</style>
+</head>
+<body>
+<div id="backgroundimage1"><div class="background-gradient-down">
+  <p class="wide-heading-type mainwrap align-center">MEDAL CRITERIA FULFILLMENT</p>
+</div></div>
+<div id="panel1" class="link-slideup body-type">
+<div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 765px">
+<colgroup>
+<col style="width: 244px">
+<col style="width: 521px">
+</colgroup>
+  <tr>
+    <th class="tg-cs4k">Bronze</th>
+    <th class="tg-7ubv"></th>
+  </tr>
+  <tr>
+    <td class="tg-cs4k">1. Register and Attend</td>
+    <td class="tg-7ubv">We registered for and plan to attend the 2017 Giant Jamboree</td>
+  </tr>
+  <tr>
+    <td class="tg-cs4k">2. Deliverables</td>
+    <td class="tg-7ubv">We completed all deliverables for the standard track, including wiki, poster, presentation, safety forms, judging forms, registry part pages, and physical sample submissions to the BioBrick Registry.</td>
+  </tr>
+  <tr>
+    <td class="tg-cs4k">3. Attribution</td>
+    <td class="tg-7ubv">We created a page on our wiki clearly detailing work done by the students and work done by our mentors and advisors.</td>
+  </tr>
+  <tr>
+    <td class="tg-cs4k">4. Characterization and Contribution</td>
+    <td class="tg-7ubv">We participated in the Interlab Measurement Study. We submitted our data to iGEM HQ and created a page for our Interlab results on our wiki.</td>
+  </tr>
+  <tr>
+    <td class="tg-5mgg">Silver</td>
+    <td class="tg-le8v"></td>
+  </tr>
+  <tr>
+    <td class="tg-5mgg">1. Validated Part</td>
+    <td class="tg-le8v">We have validated that our new standard BioBrick Composite Parts BBa_K2411005 and BBa_K2411008 work as expected. BBa_K2411005 is a gene cassette containing a OR2-OR1 promoter, the first forward engineered toehold switch from Green et al., the reporter gene deGFP which a truncated version of GFP that is transcribed and translated faster than GFP, and a T500 terminator. BBa_K2411008 is the same gene cassette as BBa_K2411005 except it contains the second forward engineered toehold switch from Green et al. These parts were tested in our cell free transcription translation system and showed significant expression above our negative control cell free reaction containing no DNA, as well as a reaction containing just toehold plasmid.</td>
+  </tr>
+  <tr>
+    <td class="tg-5mgg">2. Collaboration</td>
+    <td class="tg-le8v">"We collaborated with the BostonU_Hardware team towards a future application of our project: microfluidics. We first provided feedback on the protocols that they developed for assembling and using a microfluidic chip. They built a preliminary microfluidic chip that we could eventually be used to house our cell free tests. We tested this preliminary design by running colored dye through it. We then provided feedback on the chip’s design and how it could be improved.<br><br>We also collaborated with MIT to test the potential for their RNA,binding protein MS2 to sterically protect our RNA trigger from,exonuclease degradation. They added hairpin loop structure at one end of,our trigger sequence for MS2 protein to bind."</td>
+  </tr>
+  <tr>
+    <td class="tg-5mgg">3. Human Practices</td>
+    <td class="tg-le8v">Our Human Practices consisted of three main components: Summer Pathways, the JoVE Film your Research Contest, and the Circadia Synthetica Art Project. Summer Pathways was an event we held for young women interested in STEM. Its aim was to introduce synthetic biology through four interactive activities. The four activities included running food dye on a gel, a bioethics forum, a plasmid design with paper workshop, and a microfluidic design workshop using cardboard. We also entered the JoVE film your Research Contest. Our video detailed the step-by-step protocol we used to test our constructs in the cell free system. We also included a theoretical overview how the cell free system works molecularly. The final facet of our Human Practices was the Circadia Synthetica Art Project. This project’s main goal was to use art to spark conversation with the general public concerning potential applications of synthetic biology.</td>
+  </tr>
+  <tr>
+    <td class="tg-1q0s">Gold</td>
+    <td class="tg-hht7"></td>
+  </tr>
+  <tr>
+    <td class="tg-1q0s">1. Integrated Human Practices</td>
+    <td class="tg-hht7">Our integrated Human Practices project was multifaceted. We first interviewed, Dr. Zaman, a BU professor involved in cancer and global health research, about the feasibility of our project’s future application as a cancer diagnostic. Dr. Zaman brought up two major points during our discussion with him. First, our device should be able to be used by individuals with little training and fit easily into the current structure of using diagnostics in low resource areas. Second, Dr. Zaman mentioned some technical difficulties our project would run into if used outside of the lab, such as contamination of the system by RNase. After discussing these concerns with Dr. Zaman, we decided to switch our short term focus to making our project a foundational advance.</td>
+  </tr>
+  <tr>
+    <td class="tg-1q0s">2. Modeling</td>
+    <td class="tg-hht7">I love modeling. Some of my best friends are models! I dated a model in high school and know a lot about model culture.</td>
+  </tr>
+</table></div>
+</div>
+<div id="backgroundimage2"><div class="background-gradient-up">
+</div></div>
+<script> /* THIS MAKES ANY WRAPPED ELEMENT ON THE PAGE FADE IN */
+$(document).ready(function () {
+    $('.mainwrap').fadeIn(1000);
+});
+</script>
+</body>
+</html>
